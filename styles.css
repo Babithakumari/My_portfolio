@@ -1,0 +1,339 @@
+/* Universal */
+.heading{
+  text-align:center;
+  font-family: 'Merriweather', serif;
+  margin:0;
+  padding:50px;
+  background-color:#358597;
+  color:white;
+  }
+
+body{
+    padding:0;
+    margin:0;
+}
+
+
+
+
+footer{
+    background-color:#358597;
+    padding:50px;
+    text-align:center;
+    color:white;
+}
+
+
+/* index */
+nav{
+    width:100%;
+    height:80px;
+    margin:0;
+    padding:5px;
+    background-color:#358597;
+    color:white;
+    position:fixed;
+    z-index:1;
+
+}
+
+.logo{
+    color:white;
+    font-size:35px;
+    padding:0 100px;
+    font-weight:bold;
+    line-height:80px;
+    font-family:'Poppins', sans-serif;
+}
+
+nav ul{
+    float:right;
+    margin-right:20px;
+
+}
+
+nav ul li{
+    display:inline-block;
+    line-height:80px;
+    margin:0 5px;
+}
+
+nav ul li a{
+    color:white;
+    font-family:'Poppins', sans-serif;
+    text-decoration:none;
+    font-size:17px;
+    padding:7px 13px;
+    border-radius:3px;
+}
+
+ a:hover{
+    background-color:#f4a896;
+    transition:0.5s;
+    color:grey;
+    text-decoration:none;
+}
+
+.checkbtn{
+    font-size:30px;
+    color:white;
+    float:right;
+    line-height:80px;
+    margin-right:40px;
+    pointer-events:none
+
+}
+#check{
+    display:none;
+}
+
+@media (max-width:952px){
+    label.logo{
+        font-size:30px;
+        padding-left:50px;
+    }
+
+    nav ul li a {
+        font-size:16px;
+    }
+}
+@media (max-width:858px){
+    .checkbtn{
+        display:block;
+    }
+    nav ul{
+        position:fixed;
+        top:80px;
+        left:-100%;
+        text-align:center;
+        width:100%;
+        height:100vh;
+        background:#2c3e50;
+        transition:all 0.5s;
+
+    }
+    nav ul li{
+        display:block;
+        margin:50px 0;
+        line-height:30px;
+    }
+
+    nav ul li a{
+        font-size:20px;
+    }
+
+    nav ul li a:hover{
+        background:none;
+        color:#f4a896;
+    }
+
+    #check:checked ~ ul{
+        left:0;
+    }
+
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: pointer;
+}
+
+
+
+
+#home{
+    background-image:url("https://meshdesignstudio.com/wp-content/uploads/2018/02/mesh-background-portfolio-lglines.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:100vh;
+    height:100vh;
+}
+
+/* styling contents of homepage*/
+section{
+ padding:200px;
+ text-align:center;
+
+}
+
+
+.intro-content{
+    display:inline-block;
+    padding:30px;
+    background-color:#f4a896;
+    visibility:inherit;
+    border-radius:6px;
+    font-family: 'Playfair Display', serif;
+    color:#393e46;
+    text-align:center;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+
+}
+
+#about{
+      background-color:#fcf5ee;
+
+
+}
+
+#custom{
+    padding:15px;
+    font-family: 'Ubuntu', sans-serif;
+    line-height:2rem;
+    text-align:left;
+    height:80vh;   
+
+
+}
+
+/* styling burgerbutton*/
+
+
+
+@media screen and (max-width:600px){
+
+     #about-content{
+        padding:6px;
+
+    }
+
+
+
+    section{
+    padding:200px 6px 200px 6px;
+
+    }
+}
+
+#skills{
+    background-color:#f4a896;
+}
+#projects{
+    background-color:#fcf5ee;
+}
+#other  {
+    background-color:#f4a896;
+}
+button{
+    background-color:#358597 ;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* skills page css */
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,200px);
+  grid-template-rows:repeat(3,200px);
+  justify-content:center;
+
+}
+
+.card{
+  box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+  transition:0.3s;
+  margin:12px;
+  padding:8px;
+  border-radius:6px;
+
+}
+.card:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card img{
+  height:16vh;
+  width:100%;
+}
+
+.card-header {
+
+  text-align:center;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+@media screen and (max-width:600px){
+    .cards{
+        display:grid;
+        grid-template-columns:repeat(2,200px);
+        grid-template-rows:repeat(2,200px);
+        justify-content:center;
+
+     }
+
+}
+
+
+
+/* Hobbies */
+.cardsB {
+    display:grid;
+    justify-content:center;
+
+}
+
+
+
+/* Contacts page */
+.container{
+    display:grid;
+
+}
+label{
+    padding:6px;
+    font-family:"Montserrat";
+}
+
+#contact input , textarea {
+    padding :15px;
+    margin: 8px;
+    width:95%;
+    border-color:black;
+    margin-top: 6px;
+    margin-bottom: 16px;
+
+}
+
+
+#submit{
+    margin:auto;
+    display:flex;
+    margin-bottom:50px;
+    background-color:#358597;   
+
+}
+#icons{
+    font-size:25px;
+    
+}
+a{
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -58,7 +58,7 @@ nav ul li{
     margin:0 5px;
 }
 
-nav ul li a{
+nav ul li {
     color:white;
     font-family:'Poppins', sans-serif;
     text-decoration:none;
@@ -70,8 +70,9 @@ nav ul li a{
  a:hover{
     background-color:#f4a896;
     transition:0.5s;
-    color:grey;
+    color:black;
     text-decoration:none;
+    padding:5px;
 }
 
 .checkbtn{
@@ -319,21 +320,78 @@ label{
     font-size:25px;
     
 }
-a{
-    color:white;
+li > a{
+    color:white
+}
+/* Styling for the footer */
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
 }
 
+/* Style for the social media icons */
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0 10px;
+}
 
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .social-icons a {
+        font-size: 20px;
+    }
+}
 
+/* Center-align the skills section */
+#skills {
+    text-align: center;
+    margin: 0 auto;
+  }
+#all-skills{
+    display:flex
 
-
-
-
-
-
-
-
-
-
-
-
+}
+  
+  /* Style skill cards */
+  .skill-card {
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the category headings */
+  h6 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  /* Style the code spans (icons) */
+  span code {
+    display: inline-block;
+    margin: 5px;
+  }
+  
+  /* Add some padding to the code spans for better spacing */
+  span code img {
+    padding: 4px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+  }
+  
+  /* Optional: Add a hover effect to the icons */
+  span code img:hover {
+    background-color: #ddd;
+  }
+  
